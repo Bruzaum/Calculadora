@@ -1,0 +1,200 @@
+/* Principal */
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(100deg, #d4f1ff, #ffffff);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 75px 75px 75px 75px 75px;
+}
+
+.botoes {
+    width: 98%;
+    height: 99.3%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.visor-numero---input {
+    width: 97%;
+    height: 91%;
+    font-size: 40px;
+
+    text-align: end;
+    margin-right: 5px;
+
+    border-radius: 10px;
+}
+
+.visor-numero---input::placeholder {
+    margin-right: 5px;
+}
+
+.botoes {
+    border-radius: 10px;
+    
+    background-color: #01394c;
+    color: white;
+}
+
+.botoes {
+    transition-duration: 0.4s;
+}
+  
+
+.botoes--igual {
+    border-radius: 10px;
+    width: 98%;
+    height: 99.8%;
+    font-size: 30px;
+    background-color: #ff835d;
+    color: black;
+    cursor: pointer;
+}
+
+.visor-numero {
+    grid-column: 1/5;
+    grid-row: 1/2;
+} 
+
+.botoes-mais {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.botoes-- {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.botoes-X {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.botoes-div {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.botoes-7 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.botoes-8 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.botoes-9 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.botoes-igual {
+    grid-column: 4/5;
+    grid-row: 3/7;
+}
+
+.botoes-4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.botoes-5 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.botoes-6 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.botoes-1 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.botoes-2 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.botoes-3 {
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+.botoes-0 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+.botoes-ponto {
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+.botoes-AC {
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
+
+
+
+/* Rodape */
+footer {
+    position: fixed;
+    bottom: 0;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    width: 100%;
+
+    background-color:#01394c;
+    color: white;
+}
+
+
+.fa {
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+
+    margin-left: 6rem;
+  }
+  
+.fa:hover {
+    opacity: 0.8;
+}
+
+.fa-linkedin {
+    color: #3B5998;
+}
+
+.fa-github {
+    color: white;
+}
+
+.fa-instagram {
+    color: #f09433;
+}
