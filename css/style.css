@@ -224,6 +224,10 @@ footer {
       width: 87%;
       height: 75%;
     }
+  
+    .body {
+      height: calc(100vh - 120px);
+    }
 
     .calculadora {
         display: grid;
