@@ -227,6 +227,8 @@ footer {
   
     .body {
       height: calc(100vh - 120px);
+      align-items: start;
+      padding: 1.5em;
     }
 
     .calculadora {
