@@ -219,8 +219,12 @@ footer {
 
 @media screen and (max-width: 700px){
     .visor-numero---input {
-      width: 85%;
-      height: 80%;
+      width: 87%;
+      height: 75%;
+    }
+  
+    #AC {
+      text-align: center;
     }
   
     body {
