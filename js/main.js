@@ -45,30 +45,41 @@ botao.addEventListener("click", (event) => {
             novoNumero = novoNumero + tecla.textContent
             exp = exp + tecla.textContent
             visor.value = parseFloat(novoNumero)
+            
         }else if(tecla.textContent === '×') {
             res = eval(exp)
             visor.value = res
             exp = res.toString()
             exp = exp + '*'
             novoNumero = ''
+            valida = 0
         }else if(tecla.textContent === '÷') {
             res = eval(exp)
             visor.value = res
             exp = res.toString()
             exp = exp + '/'
             novoNumero = ''  
+            valida = 0
         }else if(tecla.textContent === '+') {
             res = eval(exp)
             visor.value = res
             exp = res.toString()
             exp = exp + tecla.textContent
             novoNumero = ''
+            valida = 0
         }else if(tecla.textContent === '-') {
+            
             res = eval(exp)
             visor.value = res
-            exp = res.toString();
-            exp = exp + tecla.textContent
             novoNumero = ''
+            valida = 0
+            if(exp === ''){
+                exp = '0' + tecla.textContent
+            }else {
+                exp = res.toString();
+                exp = exp + tecla.textContent
+            } 
+            
         }else if (tecla.textContent === '=') {
             res = eval(exp)
             visor.value = res
