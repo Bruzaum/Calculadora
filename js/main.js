@@ -24,11 +24,6 @@ botao.addEventListener("click", (event) => {
 
     var newexp = exp.split('')
 
-    console.log(!newOp.includes(tecla.textContent))
-    console.log(tecla.textContent)
-    console.log(valida)
-
-    
     if(op.includes(newexp[exp.length - 1]) && op.includes(tecla.textContent) ) {
         if(tecla.textContent === '×') {
             newexp.push("*")
@@ -82,17 +77,10 @@ botao.addEventListener("click", (event) => {
         }
     }
 
-    /* Tentando fazer com que o visor resete quando digite um numero após o resultado aparecer*/
-
-    // if( ( !newOp.includes(tecla.textContent) ) && (valida == 1) ) {
-    //     res = 0
-    //     novoNumero = ''
-    //     exp = ''
-    //     novoNumero = '' + tecla.textContent
-    //     exp = '' + tecla.textContent
-    //     visor.value = parseFloat(novoNumero)
-    //     valida = 0
-    // } 
-
-
+    if( ( !newOp.includes(tecla.textContent) ) && (valida == 1) ) {
+        novoNumero = '' + tecla.textContent
+        exp = '' + tecla.textContent
+        visor.value = parseFloat(novoNumero)
+        valida = 0
+    } 
 })
