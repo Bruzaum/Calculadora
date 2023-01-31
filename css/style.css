@@ -215,3 +215,38 @@ footer {
 .fa-instagram {
     color: #f09433;
 }
+
+
+@media screen and (max-width: 700px){
+
+    .calculadora {
+        display: grid;
+        grid-template-columns: 80px 80px 80px 80px;
+        grid-template-rows: 100px 75px 75px 75px 75px 75px;
+    }
+    
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        margin-top: 20px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        height: 100px;
+        width: 100%;
+
+    }
+
+    .copyright {
+        margin-bottom: 12px;
+    }
+
+    .fa {
+        margin-left: 2rem;
+    }
+      
+}
