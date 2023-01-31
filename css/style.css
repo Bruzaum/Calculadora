@@ -21,7 +21,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2em;
   
     height: calc(100vh - 50px);
     
@@ -224,11 +223,6 @@ footer {
     .visor-numero---input {
       width: 87%;
       height: 75%;
-    }
-
-    body {
-      padding-top: 2em;
-
     }
 
     .calculadora {
