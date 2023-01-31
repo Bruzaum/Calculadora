@@ -22,6 +22,9 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2em;
+  
+    height: calc(100vh - 50px);
+    
 
 }
 
@@ -222,11 +225,7 @@ footer {
       width: 87%;
       height: 75%;
     }
-  
-    #AC {
-      text-align: start;
-    }
-  
+
     body {
       padding-top: 2em;
 
