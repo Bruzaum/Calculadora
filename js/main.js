@@ -34,9 +34,11 @@ botao.addEventListener("click", (event) => {
         exp = test
     } else {
         if (tecla.textContent === 'AC') {
+            res = 0
             novoNumero = ''
             exp = ''
-            visor.value = novoNumero
+            visor.value = parseFloat(novoNumero)
+            valida = 0
         }else if (!nan.includes(tecla.textContent)){
             novoNumero = novoNumero + tecla.textContent
             exp = exp + tecla.textContent
