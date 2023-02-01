@@ -2,7 +2,7 @@
 Projeto pessoal para aplicar os conhecimentos de Javascript adquiridos
 
 Para quem se interessar e quiser conferir como ficou, segue o link:
-[Calculadora](link)
+[Calculadora](https://calculadora-sigma-pearl.vercel.app/)
 
 ## Linguagens Utilizadas:
 
