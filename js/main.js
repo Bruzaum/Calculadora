@@ -4,15 +4,11 @@ const botao = document.querySelector('.calculadora')
 const nan = ["+", "-", "×", "÷", "=", "AC"]
 const op = ["+", "-", "×", "÷", "*", "/"]
 const newOp = ["+", "-", "×", "÷", "*", "/", "="]
-const ac = []
 
 const numeroVisor = 0
-
 var novoNumero = ''
-
 var exp = ''
-let res = 0
-let valida = 0
+let res = 0, valida = 0
 
 const visor = document.getElementById('visor-numero---input')
     visor.innerHTML = numeroVisor
@@ -47,28 +43,21 @@ botao.addEventListener("click", (event) => {
             visor.value = parseFloat(novoNumero)
             
         }else if(tecla.textContent === '×') {
-            res = eval(exp)
-            visor.value = res
-            exp = res.toString()
+            atualizaVisor()
             exp = exp + '*'
             novoNumero = ''
             valida = 0
         }else if(tecla.textContent === '÷') {
-            res = eval(exp)
-            visor.value = res
-            exp = res.toString()
+            atualizaVisor()
             exp = exp + '/'
             novoNumero = ''  
             valida = 0
         }else if(tecla.textContent === '+') {
-            res = eval(exp)
-            visor.value = res
-            exp = res.toString()
+            atualizaVisor()
             exp = exp + tecla.textContent
             novoNumero = ''
             valida = 0
         }else if(tecla.textContent === '-') {
-            
             res = eval(exp)
             visor.value = res
             novoNumero = ''
@@ -81,9 +70,7 @@ botao.addEventListener("click", (event) => {
             } 
             
         }else if (tecla.textContent === '=') {
-            res = eval(exp)
-            visor.value = res
-            exp = res.toString()
+            atualizaVisor()
             valida = 1
         }
     }
@@ -95,3 +82,9 @@ botao.addEventListener("click", (event) => {
         valida = 0
     } 
 })
+
+function atualizaVisor() {
+    res = eval(exp)
+    visor.value = res
+    exp = res.toString()
+}
